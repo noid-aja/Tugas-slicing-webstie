@@ -42,10 +42,9 @@ const contactBtn = document.querySelector(".contact-btn");
 
 contactBtn.addEventListener("click", () => {
     const email = "dionkaban74@gmail.com";
-    const subject = encodeURIComponent("Halo Dion, saya tertarik bekerja sama!");
+    const subject = encodeURIComponent("p");
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
-    
-    // Buka Gmail web di tab baru
+  
     window.open(gmailUrl, "_blank");
 });
 
