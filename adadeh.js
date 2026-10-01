@@ -38,3 +38,10 @@ window.addEventListener("scroll", () => {
     });
 });
 
+const contactBtn = document.querySelector(".contact-btn");
+
+contactBtn.addEventListener("click", () => {
+    window.location.href = "mailto:dionkaban74@gmail.com?subject=P";
+});
+
+
