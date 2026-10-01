@@ -41,7 +41,11 @@ window.addEventListener("scroll", () => {
 const contactBtn = document.querySelector(".contact-btn");
 
 contactBtn.addEventListener("click", () => {
-    window.location.href = "mailto:dionkaban74@gmail.com?subject=P";
+    const email = "dionkaban74@gmail.com";
+    const subject = encodeURIComponent("Halo Dion, saya tertarik bekerja sama!");
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
+    
+    // Buka Gmail web di tab baru
+    window.open(gmailUrl, "_blank");
 });
-
 
